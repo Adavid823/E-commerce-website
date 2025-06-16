@@ -1,0 +1,86 @@
+/* login.css */
+body {
+  font-family: "Segoe UI", sans-serif;
+  
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.con{
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.login-form h2 {
+  margin-bottom: 0.5rem;
+  color: #ff6a00;
+}
+
+.login-form p {
+  font-size: 14px;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.5rem;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #e95c00;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

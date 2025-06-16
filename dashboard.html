@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard – ShopSmart</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+
+  <!-- ✅ Top Navbar -->
+  <header class="top-nav">
+    <button class="toggle-btn" id="toggleSidebar">☰</button>
+    <div class="logo">ShopSmart</div>
+  </header>
+
+  <!-- ✅ Layout -->
+  <div class="dashboard-wrapper">
+    
+    <!-- ✅ Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="user-profile">
+  <img src="user.jpg" alt="User Photo" />
+  <h3>Ayo David</h3>
+</div>
+
+<ul>
+  <li><a href="dashboard.html">Dashboard</a></li>
+  <li><a href="product.html" class="active">Products</a></li>
+  <li><a href="orders.html">My Orders</a></li>
+  <li><a href="#">Wishlist</a></li>
+  <li><a href="#">Wallet</a></li>
+  <li><a href="#">Messages</a></li>
+  <li><a href="#">Account Settings</a></li>
+  <li><a href="login.html" class="logout">Logout</a></li>
+</ul>
+    </aside>
+
+    <!-- ✅ Main Content -->
+    <main class="main-content">
+      <h1>Welcome, Ayo 👋</h1>
+
+      <div class="cards">
+        <div class="card"><h2>Orders</h2><p>12 Completed</p></div>
+        <div class="card">
+  <h2>Cart</h2>
+  <p id="cartCount">Loading items...</p>
+  <p id="cartLast">Last item: —</p>
+  <p id="cartTotal">Total: ₦0</p>
+</div>
+
+        <div class="card"><h2>Wishlist</h2><p>5 Products</p></div>
+        <div class="card"><h2>Messages</h2><p>2 New</p></div>
+        <div class="card"><h2>Wallet</h2><p>$450.00</p></div>
+      </div>
+
+      <section class="recent">
+        <h2>Recent Activity</h2>
+        <ul>
+          <li>📦 Order #10123 shipped – 2 hours ago</li>
+          <li>💰 $50 added to wallet – 1 day ago</li>
+          <li>🛒 \"Smart Watch\" added to cart – 3 days ago</li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

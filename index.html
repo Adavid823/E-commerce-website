@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopSmart - Your Online Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">ShopSmart</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About us</a>
+      <div class="auth-links animate">
+  <a href="login.html" class="login-btn">Login</a>
+  <a href="signup.html" class="signup-btn">Sign Up</a>
+</div>
+
+    </nav>
+    <!-- Add this inside <header> before </header> -->
+<div class="cart-icon" id="cart-icon">🛒 (<span id="cart-count">0</span>)</div>
+
+<!-- Add this after footer -->
+<div class="cart-modal" id="cart-modal">
+  <h3>Your Cart</h3>
+  <div id="cart-items"></div>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <button id="clear-cart">Clear Cart</button>
+  <button id="close-cart">Close</button>
+  <div class="cart-menu">
+  <!-- Existing cart items here -->
+  <div class="cart-footer">
+    <a href="login.html" class="order-btn">Order Now</a>
+  </div>
+</div>
+</div>
+
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Your Style</h1>
+      <p>Trendy fashion, tech gadgets & more — all in one place.</p>
+      <section class="shop-cta">
+  <h2>Explore Our Products</h2>
+  <p>Find the best items curated just for you.</p>
+  <a href="shop.html" class="btn">Shop Now</a>
+</section>
+
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products animate">
+    <div class="product-controls">
+  <input type="text" id="search-input" placeholder="Search products..." />
+  
+  <select id="category-filter">
+    <option value="all">All Categories</option>
+    <option value="gadgets">Gadgets</option>
+    <option value="fashion">Fashion</option>
+    <option value="shoes">Shoes</option>
+  </select>
+
+  <select id="sort-select">
+    <option value="default">Sort</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+  </select>
+</div>
+
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Wireless Headphones" data-price="99.99" data-category="gadgets">
+  <img src="image/Headphone.jpeg" alt="Product 1">
+  <h3>Wireless Headphones</h3>
+  <p>$99.99</p>
+  <button>Add to Cart</button>
+</div>
+ <div class="product-card" data-name="shoe" data-price="149.99" data-category="shoes">
+  <img src="image/shoe1.png" alt="Product 2">
+  <h3>running shoe</h3>
+  <p>$149.99</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card" data-name="cool jacket" data-price="139.99" data-category="gadgets">
+  <img src="image/jacket1.png" alt="Product 3">
+  <h3>cool jacket</h3>
+  <p>$139.99</p>
+  <button>Add to Cart</button>
+</div>
+ <div class="product-card" data-name="watch" data-price="229.99" data-category="fashion">
+  <img src="image/watch1.png" alt="Product 4">
+  <h3>watch</h3>
+  <p>$229.99</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card" data-name="Ring" data-price="49.99" data-category="fashion">
+  <img src="image/background1.jpeg" alt="Product 5">
+  <h3>Ring</h3>
+  <p>$49.99</p>
+  <button>Add to Cart</button>
+</div>
+ <div class="product-card" data-name="laptop" data-price="699.99" data-category="gadgets">
+  <img src="image/laptop.jpeg" alt="Product 6">
+  <h3>laptop</h3>
+  <p>$699.99</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card" data-name="cool jacket" data-price="59.99" data-category="gadgets">
+  <img src="image/chair.jpeg" alt="Product 7">
+  <h3>chair</h3>
+  <p>$59.99</p>
+  <button>Add to Cart</button>
+</div>
+ <div class="product-card" data-name="car" data-price="979.99" data-category="gadgets">
+  <img src="image/car.png" alt="Product 8">
+  <h3>car</h3>
+  <p>$979.99</p>
+  <button>Add to Cart</button>
+</div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="newsletter animate">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ShopSmart. All rights reserved.</p>
+  </footer>
+</body>
+</html>

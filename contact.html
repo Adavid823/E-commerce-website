@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — ShopSmart</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <script defer src="contact.js"></script>
+  <script defer src="nav.js"></script>
+</head>
+<body>
+  <!-- ✅ NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="nav-logo">ShopSmart</div>
+  <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html" class="login-btn">Login / Sign Up</a></li>
+  </ul>
+</nav>
+  <header class="contact-header">
+    <h1 class="page-title animate">Contact Us</h1>
+  </header>
+
+  <section class="contact-section animate">
+    <div class="contact-container">
+      <div class="contact-form-box">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info-box">
+        <h2>Reach Us</h2>
+        <p><strong>Email:</strong> support@shopsmart.com</p>
+        <p><strong>Phone:</strong> +234 000 123 4567</p>
+        <p><strong>Address:</strong> 123 Future Street, Tech City, Nigeria</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9AM–6PM</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

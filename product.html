@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop – ShopSmart</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script defer src="product.js"></script>
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <!-- Top Navbar -->
+  <header class="top-nav">
+    <button class="toggle-btn" id="toggleSidebar">☰</button>
+    <div class="logo">ShopSmart</div>
+  </header>
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="user-profile">
+        <img src="user.jpg" alt="User Photo" />
+        <h3>Ayo David</h3>
+      </div>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="active"><a href="product.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#">My Orders</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Account Settings</a></li>
+        <li><a href="login.html" class="logout">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Product Content -->
+    <main class="main-content">
+      <h1>Shop Products</h1>
+      <div class="cards" id="productList">
+        <!-- Products will be added by JS -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>
